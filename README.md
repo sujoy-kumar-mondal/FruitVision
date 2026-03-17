@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FruitVision 🍎
+
+> AI-powered fruit classification and freshness prediction system.  
+> BCA Final Year Project — Team D-09 (Pixel Mind), Brainware University, 2025.
+
+## Features
+
+- Upload fruit images via drag-and-drop or file browser
+- Classify fruit type from 9 supported fruits using HybridConvNet CNN
+- Predict freshness across 5 discrete stages
+- Clean, animated Next.js frontend with Framer Motion
+- Mobile-responsive design
+
+## Supported Fruits
+
+Apple, Banana, Custard Apple, Gooseberry, Grapes, Guava, Pear, Purple Grapes, Sapodilla
+
+## Freshness Stages
+
+1. Fresh → 2. Consumable → 3. Rot Started → 4. Almost Rotten → 5. Rotten
+
+## Tech Stack
+
+- Next.js 14 (App Router) + TypeScript
+- Tailwind CSS v4 + Framer Motion + Lucide React
+- Mock API (replace with FastAPI + PyTorch for production)
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Model Integration
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+See comments in `app/api/classify/route.ts` and `app/api/freshness/route.ts`
+for full instructions on connecting the trained PyTorch model.
 
-## Learn More
+Toggle `IS_MOCK_MODE` in `lib/constants.ts` to show/hide the demo mode banner.
 
-To learn more about Next.js, take a look at the following resources:
+## Environment Variables
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+ML_SERVICE_URL=http://localhost:8000   # FastAPI microservice URL
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Structure
 
-## Deploy on Vercel
+```
+fruitvision/
+├── app/
+│   ├── layout.tsx                  # Root layout
+│   ├── page.tsx                    # Landing page
+│   ├── analyze/page.tsx            # Main analysis page
+│   ├── api/classify/route.ts       # Classify API (mock)
+│   └── api/freshness/route.ts      # Freshness API (mock)
+├── components/
+│   ├── layout/                     # Navbar, Footer
+│   ├── landing/                    # Hero, HowItWorks, SupportedFruits, TechStack
+│   └── analyze/                    # ImageUploader, ImagePreview, ActionButtons,
+│                                   #   ClassificationResult, FreshnessResult, UnknownFruitAlert
+├── hooks/useAnalysis.ts            # Core analysis state hook
+├── lib/
+│   ├── api.ts                      # Client-side fetch helpers
+│   ├── constants.ts                # Fruits, stages, IS_MOCK_MODE
+│   └── types.ts                    # TypeScript interfaces
+└── public/fruits/                  # Fruit images for landing page
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Team
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Team D-09 — Pixel Mind**  
+Brainware University, Department of Computational Science, 2025
