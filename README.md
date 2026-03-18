@@ -6,14 +6,14 @@
 ## Features
 
 - Upload fruit images via drag-and-drop or file browser
-- Classify fruit type from 9 supported fruits using HybridConvNet CNN
+- Classify fruit type from 8 supported fruits using HybridConvNet CNN
 - Predict freshness across 5 discrete stages
 - Clean, animated Next.js frontend with Framer Motion
 - Mobile-responsive design
 
 ## Supported Fruits
 
-Apple, Banana, Custard Apple, Gooseberry, Grapes, Guava, Pear, Purple Grapes, Sapodilla
+Apple, Banana, Gooseberry, Grapes, Guava, Pear, Purple Grapes, Sapodilla
 
 ## Freshness Stages
 

@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"], display: "swap" });
 export const metadata: Metadata = {
   title: "FruitVision — AI-Powered Fruit Classification & Freshness Prediction",
   description:
-    "FruitVision uses a custom Convolutional Neural Network to identify 9 fruit types and predict freshness across 5 stages — instantly. BCA Final Year Project, Team D-09 Pixel Mind.",
+    "FruitVision uses a custom Convolutional Neural Network to identify 8 fruit types and predict freshness across 5 stages — instantly. BCA Final Year Project, Team D-09 Pixel Mind.",
   keywords: [
     "fruit classification",
     "freshness prediction",

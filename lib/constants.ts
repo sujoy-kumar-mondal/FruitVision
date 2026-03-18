@@ -11,7 +11,6 @@ export const IS_MOCK_MODE = true;
 export const SUPPORTED_FRUITS: FruitName[] = [
   "Apple",
   "Banana",
-  "Custard Apple",
   "Gooseberry",
   "Grapes",
   "Guava",
@@ -23,7 +22,6 @@ export const SUPPORTED_FRUITS: FruitName[] = [
 export const FRUIT_EMOJIS: Record<FruitName, string> = {
   Apple: "🍎",
   Banana: "🍌",
-  "Custard Apple": "🍏",
   Gooseberry: "🫐",
   Grapes: "🍇",
   Guava: "🍈",
@@ -35,7 +33,6 @@ export const FRUIT_EMOJIS: Record<FruitName, string> = {
 export const FRUIT_IMAGES: Record<FruitName, string> = {
   Apple: "/fruits/apple.jpg",
   Banana: "/fruits/banana.jpg",
-  "Custard Apple": "/fruits/custard_apple.jpg",
   Gooseberry: "/fruits/gooseberry.jpg",
   Grapes: "/fruits/grapes.jpg",
   Guava: "/fruits/guava.jpg",

@@ -3,7 +3,6 @@
 export type FruitName =
   | "Apple"
   | "Banana"
-  | "Custard Apple"
   | "Gooseberry"
   | "Grapes"
   | "Guava"

@@ -43,7 +43,7 @@ export default function HeroSection() {
             <p className="text-lg text-stone-500 leading-relaxed max-w-lg">
               FruitVision uses a custom-built Convolutional Neural Network to
               identify{" "}
-              <span className="font-semibold text-stone-700">9 fruit types</span>{" "}
+              <span className="font-semibold text-stone-700">8 fruit types</span>{" "}
               and predict freshness across{" "}
               <span className="font-semibold text-stone-700">5 stages</span> —
               instantly.
@@ -68,7 +68,7 @@ export default function HeroSection() {
             {/* Stat Pills */}
             <div className="flex flex-wrap gap-3">
               {[
-                "✓ 9 Fruit Types",
+                "✓ 8 Fruit Types",
                 "✓ 5 Freshness Stages",
                 "✓ Custom CNN Model",
               ].map((pill) => (

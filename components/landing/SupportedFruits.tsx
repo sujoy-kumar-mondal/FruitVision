@@ -23,7 +23,7 @@ export default function SupportedFruits() {
             Supported Fruits
           </h2>
           <p className="text-lg text-stone-500 max-w-xl mx-auto">
-            FruitVision currently recognizes these 9 fruit types
+            FruitVision currently recognizes these 8 fruit types
           </p>
         </motion.div>
 

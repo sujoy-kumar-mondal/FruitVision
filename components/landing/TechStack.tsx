@@ -7,7 +7,7 @@ import { useRef } from "react";
 const STATS = [
   { value: "~700K", label: "Trainable Parameters" },
   { value: "0.97", label: "Macro F1 Score (Phase 2)" },
-  { value: "9", label: "Fruit Classes" },
+  { value: "8", label: "Fruit Classes" },
   { value: "5", label: "Freshness Stages" },
 ];
 

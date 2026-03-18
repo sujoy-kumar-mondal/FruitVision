@@ -27,8 +27,8 @@
  *    Architecture: HybridConvNet (custom PyTorch CNN)
  *    Input: 64x64 RGB image tensor
  *    Output: 9-class softmax probabilities
- *    Classes (in order): Apple, Banana, Custard Apple, Gooseberry,
- *                        Grapes, Guava, Pear, Purple Grapes, Sapodilla
+ *    Classes (in order): Apple, Banana, Gooseberry, Grapes,
+ *                        Guava, Pear, Purple Grapes, Sapodilla
  *
  * 5. Replace the mock block below with:
  *    const formData = new FormData();
@@ -53,7 +53,7 @@ function randomBetween(min: number, max: number): number {
   return Math.random() * (max - min) + min;
 }
 
-/** Generate random probabilities for all 9 fruits that sum to 1.0 */
+/** Generate random probabilities for all 8 fruits that sum to 1.0 */
 function generateProbabilities(
   topFruit: FruitName,
   topConfidence: number
